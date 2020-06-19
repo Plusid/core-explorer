@@ -12,7 +12,7 @@
 
 > Lead Maintainer: [Michel Kraaijeveld](https://github.com/ItsANameToo)
 
-You can access it at [https://explorer.ark.io/](https://explorer.ark.io/).
+You can access it at [https://134.122.119.115:4200/](http://134.122.119.115:4200/).
 
 ## Build Setup
 
