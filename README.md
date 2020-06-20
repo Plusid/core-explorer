@@ -12,7 +12,7 @@
 
 > Lead Maintainer: [Michel Kraaijeveld](https://github.com/ItsANameToo)
 
-You can access it at [https://68.183.102.212:4200/](http://68.183.102.212:4200/).
+You can access it at [http://68.183.102.212:4200/](http://68.183.102.212:4200/).
 
 ## Build Setup
 
