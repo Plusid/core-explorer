@@ -19,7 +19,8 @@ You can access it at [https://134.122.119.115:4200/](http://134.122.119.115:4200
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Plusid/explorer
+git clone https://github.com/Plusid/core-explorer
+cd core-explorer
 ```
 
 ### 2. Install Dependencies
