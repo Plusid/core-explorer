@@ -130,4 +130,4 @@ This project exists thanks to all the people who [contribute](../../contributors
 
 ## License
 
-[MIT](LICENSE) © [Inifnity Software](https://infinitysoftware.io)
+[MIT](LICENSE) © [Infinity Software](https://infinitysoftware.io)
