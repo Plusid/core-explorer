@@ -10,7 +10,6 @@
 [![Codecov](https://badgen.now.sh/codecov/c/github/arkecosystem/explorer)](https://codecov.io/gh/arkecosystem/explorer)
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
 
-> Lead Maintainer: [Michel Kraaijeveld](https://github.com/ItsANameToo)
 
 You can access it at [http://68.183.102.212:4200/](http://68.183.102.212:4200/).
 
