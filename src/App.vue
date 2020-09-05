@@ -48,7 +48,6 @@ import moment from "moment";
 export default class App extends Vue {
   public currencyTimer: NodeJS.Timeout;
   public networkTimer: NodeJS.Timeout;
-  public curTimer: NodeJS.Timeout;
   private currencyName: string;
   private stateHasDelegates: boolean;
   private token: string;
@@ -136,7 +135,6 @@ export default class App extends Vue {
     this.updateLocale();
     this.updateCurrencyRate();
     this.updateSupply();
-    this.getCur();
     this.updateHeight();
     this.updateDelegates();
 
@@ -190,13 +188,6 @@ export default class App extends Vue {
   public async updateSupply() {
     const supply = await BlockchainService.supply();
     this.$store.dispatch("network/setSupply", supply);
-  }
-
-  public async getCur(){
-    const supply = await BlockchainService.supply();
-    const balance = await BlockchainService.cur();
-    const curincir = parseInt(supply) - balance;
-    this.$store.dispatch("network/setCur", curincir);
   }
 
   public async updateHeight() {
@@ -257,17 +248,11 @@ export default class App extends Vue {
       this.updateHeight();
       this.updateDelegates();
     }, 8 * 1000);
-
-    this.curTimer = setInterval(() => {
-      this.getCur();
-    }, 60 * 60 * 1000);
-  
   }
 
   public clearTimers() {
     clearInterval(this.currencyTimer);
     clearInterval(this.networkTimer);
-    clearInterval(this.curTimer);
   }
 }
 </script>

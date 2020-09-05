@@ -126,8 +126,6 @@ export interface IApiResponse {
   statusCode?: string;
   meta?: IMeta;
   data?: any[] | any;
-  hasUnlisted?: string;
-  unlisted_addresses?: any[] | any;
 }
 
 export interface IApiBlockWrapper {
@@ -162,7 +160,6 @@ export interface IBlockchain {
     id: string;
   };
   supply: string;
-  cur: string;
 }
 
 export interface IApiWalletsWrapper {
@@ -233,7 +230,6 @@ export interface INetworkState {
   currencies: any[];
   knownWallets: any[];
   supply: string;
-  cur: string;
   initialSupply: string;
   height: number;
   epoch: string | null;

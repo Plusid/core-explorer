@@ -18,7 +18,6 @@ const state: INetworkState = {
   currencies: [],
   knownWallets: [],
   supply: null,
-  cur: null,
   initialSupply: null,
   height: 0,
   epoch: null,
@@ -104,12 +103,6 @@ const actions: ActionTree<INetworkState, {}> = {
   setSupply: ({ commit }, value) => {
     commit({
       type: types.SET_NETWORK_SUPPLY,
-      value,
-    });
-  },
-  setCur: ({ commit }, value) => {
-    commit({
-      type: types.SET_NETWORK_CUR,
       value,
     });
   },
@@ -199,9 +192,6 @@ const mutations: MutationTree<INetworkState> = {
   [types.SET_NETWORK_SUPPLY](state, payload: IStorePayload) {
     state.supply = payload.value;
   },
-  [types.SET_NETWORK_CUR](state, payload: IStorePayload) {
-    state.cur = payload.value;
-  },
   [types.SET_NETWORK_INITIAL_SUPPLY](state, payload: IStorePayload) {
     state.initialSupply = payload.value;
   },
@@ -239,7 +229,6 @@ const getters: GetterTree<INetworkState, {}> = {
   currencies: (state) => state.currencies,
   knownWallets: (state) => state.knownWallets,
   supply: (state) => state.supply,
-  cur: (state) => state.cur,
   initialSupply: (state) => state.initialSupply,
   height: (state) => state.height,
   epoch: (state) => state.epoch,

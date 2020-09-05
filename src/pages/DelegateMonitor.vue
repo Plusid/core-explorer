@@ -22,7 +22,6 @@
       <TableDelegates
         :delegates="delegates"
         :active-tab="activeTab"
-        :curincir="cur"
         :sort-query="sortParams[activeTab]"
         @on-sort-change="onSortChange"
       />
@@ -56,14 +55,13 @@ import DelegateService from "@/services/delegate";
     ForgingStats,
   },
   computed: {
-    ...mapGetters("network", ["height", "activeDelegates", "cur"]),
+    ...mapGetters("network", ["height", "activeDelegates"]),
   },
 })
 export default class DelegateMonitor extends Vue {
   private delegates: IDelegate[] | null = null;
   private activeTab = "active";
   private height: number;
-  private cur: string;
 
   get sortParams() {
     return this.$store.getters["ui/delegateSortParams"];

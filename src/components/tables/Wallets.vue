@@ -39,7 +39,6 @@ import { paginationLimit } from "@/constants";
 
 @Component({
   computed: {
-    console: () => console,
     ...mapGetters("network", ["supply"]),
   },
 })
@@ -87,7 +86,6 @@ export default class TableWalletsDesktop extends Vue {
   })
   public wallets: IWallet[] | null;
   @Prop({ required: true }) public total: string;
-  @Prop({ required: true }) public unlisted: string;
 
   private windowWidth = 0;
   private supply: string;
@@ -105,10 +103,6 @@ export default class TableWalletsDesktop extends Vue {
   public supplyPercentage(balance: string): string {
     // @ts-ignore
     return this.percentageString(BigNumber.make(balance).dividedBy(this.total).times(100).toNumber());
-  }
-
-  public getUnlisted(){
-    return parseInt(this.unlisted);
   }
 
   private getRank(index: number) {
