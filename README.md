@@ -11,7 +11,7 @@
 [![License: MIT](https://badgen.now.sh/badge/license/MIT/green)](https://opensource.org/licenses/MIT)
 
 
-You can access it at [http://68.183.102.188:4200/](http://68.183.102.188:4200/).
+You can access it at [http://68.183.117.11:4200](http://68.183.117.11:4200/#/).
 
 ## Build Setup
 
