@@ -1,6 +1,6 @@
 {
-  "name": "ark-explorer",
-  "version": "3.0.0",
+  "name": "infinity-blockchain-explorer",
+  "version": "1.0.0",
   "description": "A Blockchain Explorer for ARK using Vue.js and Tailwind CSS",
   "author": "Brian Faust",
   "scripts": {
