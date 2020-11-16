@@ -1,13 +1,13 @@
 {
-  "title": "infinity Devnet Explorer",
-  "server": "https://api.infinitysolutions.io/api/v2",
+  "title": "infinityhedge Devnet Explorer",
+  "server": "http://142.93.227.152:4003/api/v2",
   "alias": "Development",
   "activeDelegates": "25",
   "rewardOffset": "1",
   "currencies": [],
   "defaults": {
-    "token": "INF",
-    "symbol": "∞",
+    "token": "HHH",
+    "symbol": "H",
     "currency": null,
     "priceChartOptions": {
       "enabled": false,

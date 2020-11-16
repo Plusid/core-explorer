@@ -1,14 +1,14 @@
 {
-  "title": "infinity Testnet Explorer",
-  "server": "http://134.122.119.115:4003/api/v2",
+  "title": "infinityhedge Testnet Explorer",
+  "server": "http://142.93.227.152:4003/api/v2",
   "alias": "Testnet local",
   "activeDelegates": "25",
   "rewardOffset": "1",
   "currencies": [],
   "knownWallets": {},
   "defaults": {
-    "token": "INF",
-    "symbol": "∞",
+    "token": "HHH",
+    "symbol": "H",
     "currency": null,
     "priceChartOptions": {
       "enabled": false,
